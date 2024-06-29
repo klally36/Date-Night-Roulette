@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>One Piece Roulette</title>
+    <link rel="stylesheet" href="fonts/colorsofautumn/stylesheet.css">
+    <link rel="stylesheet" href="fonts/sfalienc/stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="Container">
+    <div class="Content">
+        <datetime class="clock">00:00:00</datetime>
+        <div class="Header">
+            <h1>
+                <span class="HeaderSpinText">Date Night</span>
+                <strong class="HeaderWheelName">Roulette</strong>
+            </h1>
+        </div>
+        <div class="WheelContainer">
+            <div class="ArrowDown"></div>
+            <canvas id="canvas" class="WheelCanvas" width="438" height="438"></canvas>
+            <div class="WheelCircles"></div>
+            <output class="WheelResult"></output>
+        </div>
+        <div class="Actions">
+            <button class="SpinButton Punch">Spin!</button>
+        </div>
+        <a class="ForkLink" href="https://github.com/k-lally" target="_blank" rel="noopener noreferrer">fork on github</a>
+    </div>
+</div>
+<script src="vendor/TweenMax.min.js"></script>
+<script src="bundle.js"></script>
+<! play audio file "We Are.mp3" from the assets folder in the public folder in the background of the website automatically -->
+<audio autoplay loop>
+    <source src="public/assets/We Are.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+</body>
+</html>
